@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-login">
+
+  <div class="logo">M</div>
+  <h1>Welcome Back!</h1>
+  <p class="sub">Sign in to continue to your account.</p>
+
+  <div class="card">
+    <h2>Login to your account</h2>
+    <p class="hint">Enter your email and password to get started.</p>
+
+    <form id="loginForm" novalidate>
+      <div class="form-row"><label for="email">Email Address</label></div>
+      <div class="field">
+        <input type="email" id="email" placeholder="name@example.com" autocomplete="email">
+      </div>
+      <div class="error" id="emailError"></div>
+
+      <div class="form-row">
+        <label for="password">Password</label>
+        <a href="#" class="link">Forgot password?</a>
+      </div>
+      <div class="field">
+        <input type="password" id="password" placeholder="Enter your password" autocomplete="current-password">
+        <button type="button" class="show-btn" id="toggleBtn">Show</button>
+      </div>
+      <div class="error" id="passwordError"></div>
+
+      <div class="remember">
+        <input type="checkbox" id="remember">
+        <label for="remember" style="font-weight:400;color:#6b7280">Remember me</label>
+      </div>
+
+      <button type="submit" class="btn-signin">Sign In</button>
+    </form>
+
+    <p class="create">Don't have an account? <a href="#">Create an account</a></p>
+  </div>
+
+  <p class="copy">&copy; 2026 My Website. All rights reserved.</p>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
